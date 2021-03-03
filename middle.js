@@ -19,15 +19,12 @@ const assertArraysEqual = function(arr1, arr2) {
 
 const middle = function(arr1) {
   if(arr1.length <= 2) {
-    console.log("no middle");
     return [];
   } else if(arr1.length % 2 === 0) {
-    console.log("even");
-    var middle = [arr1[(arr1.length)/2 -1], arr1[(arr1.length/2)]];
+    let middle = [arr1[(arr1.length)/2 -1], arr1[(arr1.length/2)]];
     return middle;
   } else {
-    console.log("odd");
-    var oddMiddle = [Math.floor((arr1.length)/2) +1];
+    let oddMiddle = [Math.floor((arr1.length)/2) +1];
     return oddMiddle;
   }
 }
