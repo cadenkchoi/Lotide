@@ -1,2 +1,7 @@
-const assert = require('chai').assert;
+// const assert = require('chai').assert;
 const tail = require('../head');
+const assertEqual = require('../assertEqual');
+
+const words = ["Yo Yo", "Lighthouse", "Labs"];
+tail(words);
+assertEqual(words.length, 3);
