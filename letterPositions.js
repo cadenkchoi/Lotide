@@ -19,13 +19,13 @@ const assertArraysEqual = function(arr1, arr2) {
 
 const letterPositions = function(sentence) {
   const results = {};
-  const sentences = text.split("");
+  const sentences = sentence.split("");
   for (let letter of sentences) {
     // letter = letter.toLowerCase();
-    if(result[letter]) {
-      result[letter] += result[letter];
+    if(results[letter]) {
+      results[letter] += results[letter];
     } else {
-      result[letter] = 1;
+      results[letter] = 1;
     }
   }
   return results;
@@ -33,4 +33,3 @@ const letterPositions = function(sentence) {
 
 console.log(letterPositions('lighthouse in the house'));
 assertArraysEqual(letterPositions("hello").e, [1]);
-console.log(countLetters(sentence));
